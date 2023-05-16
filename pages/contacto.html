@@ -3,43 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"
+    <!-- link a google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;900&display=swap" rel="stylesheet"/>
+<!-- link a Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet" />
+  <!-- link a mi css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <title>MEDIOS DE CONTACTO </title>
 </head>
 <body>
-    <H1 align="Center"> 📢MEDIOS DE CONTACTO 📢</H1>
-    <hr />
-    <nav>
-        <ul>
-            <span> <a href="../index.html"> Inicio!</a></span>
-            <span> <a href="infopagina.html"> Nosotros!</a></span>
-        </ul>
-    </nav>
-    <hr />
-    <a href="https://web.whatsapp.com" target="_blank"> <img src="/img/contactowp.jpg"  Height="75" Width="75" alt="Whatsapp"/> </a>
-    <a href="https://www.instagram.com/ventaslamiralejos/" target="_blank"> <img src="/img/contactoinsta.jpg"  Height="75" Width="75" alt="Instagram"/> </a>
-    <a href="https://www.facebook.com/lamiralejosonline" target="_blank"> <img src="/img/contactoface.jpg"  Height="65" Width="65" alt="Facebook"/> </a>
-    <hr />
-    <h4> 👉 Dejanos tus datos y nos contactamos con vos 📞</h4>
-    <table>
-        <th>
-            <tr>
-                Empresa
-                <form method="" action="">
-                    <select name="Compañia" id="cia">
-                    <option value="claro"> Claro </option>
-                    <option value="personal"> Personal </option>
-                    <option value="Movistar"> Movistar </option>
-            </tr>
-            <tr> Telefono<input type="text" name="Telefono" maxlength="10"></tr>
-            <tr> Nombre: <input type="text" name="nombre"maxlength"25"></tr>
-            <tr> 
-                </select align="center">
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Reset"> 
-            </form>
-            </tr>
-        </th>
-    </taBle>
-    </body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-custom">
+        <div class="container-fluid">
+          <a class="navbar-brand" c href="../index.html">LA MIRALEJOS ON LINE </a>
+          <button class="navbar-brand" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse"     id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/infopagina.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">disabled</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+   <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="well well-sm">
+                <form class="form-horizontal" method="post">
+                    <fieldset>
+                        <legend class="text-center header">👉 Dejanos tus datos y nos contactamos con vos 📞</legend>
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input id="fname" name="name" type="text" placeholder="Apellido y Nombre" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input id="lname" name="name" type="text" placeholder="Last Name" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input id="email" name="email" type="text" placeholder="Email Address" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input id="phone" name="phone" type="text" placeholder="Telefono" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                            <div class="col-md-8">
+                                <textarea class="form-control" id="message" name="message" placeholder="Ingrese su mensaje aquí. Responderemos a la brevedad." rows="7"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-12 text-center">
+                                <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                                <button type="reset" class="btn btn-primary btn-lg">Borrar</button>
+                                <button type="button" class="btn btn-primary btn-lg">Volver</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<hr/>
+<a href="https://web.whatsapp.com" target="_blank"> <img src="/img/contactowp.jpg"  Height="75" Width="75" alt="Whatsapp"/> </a>
+<a href="https://www.instagram.com/ventaslamiralejos/" target="_blank"> <img src="/img/contactoinsta.jpg"  Height="75" Width="75" alt="Instagram"/> </a>
+<a href="https://www.facebook.com/lamiralejosonline" target="_blank"> <img src="/img/contactoface.jpg"  Height="65" Width="65" alt="Facebook"/> </a>
+<hr />
+
+</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </html>
