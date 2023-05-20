@@ -1,40 +1,64 @@
-.d-block-w-100{
-    display: block;
-    width: 10px;
-    height: 10px;
-}
-.item img {
-    height: 20%;
-    width: 20%;
-}
-/* Modify brand and text color */
-.navbar-custom .navbar-brand,
-.navbar-custom .navbar-text {
-	color: green;
-    width: 199px;
-}
-/* Modify the background color */
-.navbar-custom {
-	background-color: lightgreen;
-}
-.header {
-    color: #36A0FF;
-    font-size: 27px;
-    padding: 10px;
-}
-
-.bigicon {
-    font-size: 35px;
-    color: #36A0FF;
-}
-#galeriaprod .col-lg-4{
+#galeriaprod .col-lg-3{
     margin: 0 !important;
     padding: 25px;
+    
+    
 }
 #galeriaprod img{
-width: 40%;
-height: 100px;
+width: 100%;
+height: 200px;
+
 }
 #galeriaprod img:hover{
-    border: 5px solid #fdfdfd
+    border-radius: 20px;
+    box-shadow: 5px 8px 12px #a7f11d;
+    border:20px solid #83837c;
 }
+.container p{
+    font-size: 1.5rem;
+    color:rgba(8, 156, 182, 0.815);
+    background-color:;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 0 28px #fafa06;
+    cursor:pointer;
+    transition: all 0.3s ease-in-out;
+}
+.container titulo{
+    font-size: 1.5rem;
+    color:rgba(112, 70, 192, 0.26);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow:0 0 8px #fafa7b;
+    cursor:pointer;
+    transition: all 0.3s ease-in-out;
+}
+    footer {
+    margin-top: auto;
+    padding: 2rem;
+    background: #000;
+    color: #e0e0e0;
+}
+.bg_animado{
+    padding: 0.1rem;
+    color: #302738;
+    background: linear-gradient(50deg, #f7ac0c, #b67e05f5, #0f9abd, #f3ef0d);
+    background-size: 30% 300%;
+    animation: bg_animado 10s ease-in-out infinite;
+    position: relative;
+    }
+    @keyframes bg_animado{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 100%;
+    }
+    }
