@@ -14,17 +14,9 @@ height: 200px;
     border:20px solid #83837c;
 }
 .container p{
-    font-size: 1.5rem;
-    color:rgba(8, 156, 182, 0.815);
-    background-color:;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-shadow: 0 0 28px #fafa06;
-    cursor:pointer;
-    transition: all 0.3s ease-in-out;
-}
+        text-align: justify;
+        text-justify: inter-word;
+    }
 .textoddd {
     font: bold 80px/1 arial;
     text-transform: uppercase;
@@ -72,3 +64,13 @@ height: 200px;
         background-position: 0% 100%;
     }
     }
+    .redessociales {
+        position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+       right: 0; /* Establecemos la barra en la izquierda */
+        top: 200px; /* Bajamos la barra 200px de arriba a abajo */
+        z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+    }
+    
+        .redessociales ul {
+            list-style: none;
+        }
